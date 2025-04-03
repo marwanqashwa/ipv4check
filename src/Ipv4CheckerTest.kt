@@ -7,12 +7,12 @@ class Ipv4CheckerTest {
             result = ipv4Checker.ipv4CheckValidation("")
         )
         check(
-            name = "Address less than four part should return false",
+            name = "Address less than four parts should return false",
             correctResult = false,
             result = ipv4Checker.ipv4CheckValidation("192.168.3")
         )
         check(
-            name = "Address more than four part should return false",
+            name = "Address more than four parts should return false",
             correctResult = false,
             result = ipv4Checker.ipv4CheckValidation("192.168.1.3.1")
         )
@@ -69,7 +69,7 @@ class Ipv4CheckerTest {
             result = ipv4Checker.ipv4CheckValidation("192.168.1.1")
         )
         check(
-            name = "Address have 4 parts all true numbers and number is 0 should return true",
+            name = "Address have 4 parts all true numbers and have number 0 should return true",
             correctResult = true,
             result = ipv4Checker.ipv4CheckValidation("192.168.1.0")
         )
